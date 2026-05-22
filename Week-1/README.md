@@ -1,4 +1,4 @@
-## Day-1 — JavaScript Fundamentals
+## JavaScript Fundamentals
 
 # Problems
 1. biggestNumber.js — Find the biggest among given numbers
@@ -14,13 +14,11 @@
 6. smallestInList.js — Find the smallest number in a list
 
 7. sumOfList.js — Find the sum of all elements in a list
-
-## DAY 2 
-
-- take a list of objects employees
-    1. Insert new Emp at 2nd position
-    2. Remove an emp with name "Kiran"
-    3. Change the last mark 95 to 75 of emp  "Sneha"
+   
+8. take a list of objects employees
+   1. Insert new Emp at 2nd position
+   2. Remove an emp with name "Kiran"
+   3. Change the last mark 95 to 75 of emp  "Sneha"
 
 ## Learning Objectives
 
