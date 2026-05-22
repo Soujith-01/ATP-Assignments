@@ -8,22 +8,21 @@
 //actual Backend
 4. create Schema and Model of the Resource(Users)
 
-5. Build User REST API 
-        -Create user
-        -read all users 
-        -read a user by ID
-        -update a user by ID
-        -delete a user by ID
+5. Build User REST API
+   - Create user
+   - read all users
+   - read a user by ID
+   - update a user by ID
+   - delete a user by ID
 
-6. create UserApi and define routes
+7. create UserApi and define routes
+   - handling unavailable resourses
+   - validators during update
+   - hashing password(bcryptjs)
+   - unique fields
+   - refined version of error handling middleware
 
-->handling unavailable resourses
-->validators during update
-->hashing password(bcryptjs)
-->unique fields
-->refined version of error handling middleware
-
-7. User Authentication(Login) --> submit credentials and get token
+8. User Authentication(Login) --> submit credentials and get token
    - req---->Public Routes(By anyOne)
    - req--->middleware--->Protected Routes(By authenticated Users only)
 
