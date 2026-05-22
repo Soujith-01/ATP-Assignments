@@ -27,10 +27,8 @@
 
 13. exercise2.js — Spread operator with objects (copy + add property)
 
-## Modules (Mini Task Manager)
-- Modules/app.js — Runs sample task operations
-- Modules/task.js — addTask, getAllTasks, completeTask (exports)
-- Modules/validator.js — validateTitle, validatePriority, validateDueDate
+- E-CommerceShoppingCartSystem contains a small shopping cart app with modular code.
+- ToDoManagement contains a ToDo management app with task validation and data modeling.
 
 ## Learning Objectives
 
