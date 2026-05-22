@@ -1,0 +1,62 @@
+﻿# Employee Demo Backend
+
+A simple Node.js + Express backend for employee management using MongoDB and Mongoose.
+
+## Features
+
+- Create a new employee record
+- Read all employee records
+- Update an employee by ID
+- Delete an employee by ID
+- CORS-enabled with frontend origin configured via environment variable
+
+## Tech Stack
+
+- Node.js
+- Express
+- MongoDB via Mongoose
+- dotenv for environment configuration
+- cors for cross-origin requests
+
+## Dependencies
+
+This project uses the following packages:
+
+- `express` ^5.2.1 — web server framework for building the API.
+- `mongoose` ^9.3.3 — MongoDB object modeling library for schema validation and database operations.
+- `dotenv` ^17.4.1 — loads environment variables from a `.env` file.
+- `cors` ^2.8.6 — enables cross-origin requests from the frontend origin.
+
+## Setup
+
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Create a `.env` file in the project root with these variables:
+
+   ```env
+   DB_URL=mongodb+srv://<username>:<password>@<cluster>/<database>?retryWrites=true&w=majority
+   PORT=4000
+   FRONT_END_URL=http://localhost:3000
+   ```
+
+3. Start the server:
+
+   ```bash
+   nodemon server.js
+   ```
+
+   The server will connect to MongoDB and listen on the configured `PORT`.
+
+## Data Model
+
+Employee fields:
+
+- `name` (String, required)
+- `email` (String, required, unique)
+- `mobile` (Number)
+- `designation` (String, required)
+- `companyName` (String, required)
