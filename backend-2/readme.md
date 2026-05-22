@@ -23,15 +23,39 @@
 ->unique fields
 ->refined version of error handling middleware
 
-7. User Authentication(Login)
-    >submit credentials and get token
+7. User Authentication(Login) --> submit credentials and get token
+   - req---->Public Routes(By anyOne)
+   - req--->middleware--->Protected Routes(By authenticated Users only)
 
-    req---->Public Routes(By anyOne)
-    req--->middleware--->Protected Routes(By authenticated Users only)
+# Requests
+1. read users and products
+2. read user and product by id
+3. update user and product
+4. delete user and product
+   
+## Data models
 
+### User model
 
-    read users and products
-    read user and product by id
-    update user and product
-    delete user and product
+Fields:
+- `username` (string, required)
+- `password` (string, required, stored as hashed password)
+- `email` (string, required, unique)
+- `age` (number)
+- `cart` (array of items)
+  - `product` (ObjectId reference to `product`)
+  - `count` (number, default `1`)
+
+### Product model
+
+Fields:
+- `productId` (string, required)
+- `productName` (string, required)
+- `price` (number, required, min `10000`, max `50000`)
+- `brand` (string, required)
+## Environment variables
+
+- `PORT` — port for the Express server
+- `DB_URL` — MongoDB connection string
+- `SECRET_KEY` — secret key used to sign JWT tokens
 
